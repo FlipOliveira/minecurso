@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  <ul>
+    <li>
+      <%= link_to 'pessoas', people_path %>
+    </li>
+    <li>
+      <%= link_to 'serviços', services_path %>
+    </li>
+  </ul>
 
-<%= yield %>
 
+<div class="container">
+  <%= yield %>
+</div>
 </body>
 </html>
